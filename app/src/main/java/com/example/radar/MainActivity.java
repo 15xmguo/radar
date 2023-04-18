@@ -45,7 +45,7 @@ private  String receive_text="";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e("oncreate方法","执行");
-        Log.e("a","a");
+        Log.e("a","a1111");
         //获取雷达sn
 //        Intent intent_sn = getIntent();
 //        radar_sn = intent_sn.getStringExtra("radar_sn");
