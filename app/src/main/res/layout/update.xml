@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@drawable/textview_borde"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_id"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="设备ID："
+                android:textColor="#070707"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_id"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_id"></EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_ip"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="服务器域名："
+                android:textColor="#070707"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_ip"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_ip">
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_port"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="服务器端口："
+                android:textColor="#070707"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_port"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_port">
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_wifi"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="wifi名称："
+                android:textColor="#070707"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_route"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_wifi">
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_password"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="wifi密码："
+                android:textColor="#070707"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_password">
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_gateway"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="网关ip："
+                android:textColor="#070707"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/edittext_gateway"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_gateway">
+            </EditText>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/network_readback"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="49dp"
+                android:text="回读"
+                android:background="@drawable/button_color"
+                android:onClick="Onclick"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/network_set"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="49dp"
+                android:text="设置"
+                android:background="@drawable/button_color"
+                android:onClick="Onclick"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_color"
+        android:orientation="vertical"
+        android:layout_below="@+id/l1"
+        android:layout_alignParentBottom="true"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/text_update_ip"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="升级网段："
+            android:textColor="#070707"
+            android:textSize="20sp"
+            android:layout_below="@id/space"
+            />
+
+        <EditText
+            android:id="@+id/edittext_update_network"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/text_update_ip"
+            android:layout_alignBottom="@+id/text_update_ip">
+        </EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_update_pork"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:text="端口号："
+                android:textColor="#070707"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edittext_update_pork"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_toRightOf="@+id/text_update_pork"
+                android:layout_alignBottom="@+id/text_update_pork">
+            </EditText>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            >
+            <Button
+                android:id="@+id/check_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="49dp"
+                android:layout_marginBottom="49dp"
+                android:text="查询进度"
+                android:background="@drawable/button_color"
+                android:onClick="Onclick"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/begin_update"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="49dp"
+                android:layout_marginBottom="49dp"
+                android:text="开始升级"
+                android:background="@drawable/button_color"
+                android:onClick="Onclick"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/return_MainActivity1"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="返回"
+                android:background="@drawable/button_color"
+                android:onClick="Onclick"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

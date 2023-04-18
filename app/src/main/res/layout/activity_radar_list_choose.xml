@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".radar_list_choose">
+<TextView
+    android:id="@+id/space_no_use"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:visibility="invisible"
+    android:layout_alignParentTop="true"
+    >
+
+</TextView>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_below="@+id/space_no_use"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="雷达sn列表"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/sn_dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@+id/text2"
+        android:layout_alignBottom="@+id/text2"
+
+        >
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/get_radar_sn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="572dp"
+        android:onClick="Onclick"
+        android:text="获取雷达sn" />
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="118dp"
+        android:layout_height="67dp"
+        android:layout_centerInParent="true"
+        android:onClick="Onclick"
+        android:text="开始" />
+</RelativeLayout>
